@@ -414,7 +414,6 @@ body {
   gap: 0 49px;
 }
 
-
 .filter-date__subtopic {
   align-self: flex-start;
   position: relative;
@@ -445,7 +444,7 @@ body {
 }
 .title {
   font-weight: 600;
-  font-size: 48px;
+  font-size: calc(22px + 26 * (100vw / 1440));
   text-align: center
 }
 .offers__list {
@@ -454,8 +453,8 @@ body {
   margin: 0 0 40px;
 }
 .offers__topics {
-  display: flex;'
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px 33px;
   background-color: #fff;
   padding: 10px;
@@ -476,6 +475,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 20px;
+
+  margin: 0 0 240px;
 }
 .offers__card {
 }
@@ -493,7 +494,6 @@ body {
   display: flex;
   align-items: center;
   gap: 15px 20px;
-  height: 273px;
 }
 .tour__img {
 }
@@ -512,12 +512,13 @@ body {
 .tour__body {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 20px 14px 0 20px;
+  gap: 15px;
+  padding: 0 14px 0 20px;
 }
 .tour__info {
   font-size: 14px;
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 
 }
@@ -545,9 +546,10 @@ body {
 }
 .tour__price {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .tour__price-value {
   font-size: 24px;
@@ -575,9 +577,6 @@ color: #fff;
 
 
 
-/*Определить в нужное место title*/
-
-/**/
 
 /*DESTINATION*/
 .destination {
@@ -585,12 +584,13 @@ color: #fff;
 .container {
 }
 .destination__title {
-  margin: 40px;
+  margin: 0 0 40px;
 }
 .destination__topics {
   font-weight: 600;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 15px 24px;
   
@@ -604,12 +604,10 @@ color: #fff;
   color: #3E86F5;
   border-radius: 10px;
 }
-.subtopic {
-}
+
 .destination__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 20px;
   margin: 0 0 320px;
@@ -618,8 +616,7 @@ color: #fff;
   
 }
 .place {
-  flex-shrink: 1;
-  max-width: calc((100% - 60px)/4);
+  flex: 0 1 calc((100% - 60px)/4);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -630,7 +627,6 @@ color: #fff;
   padding: 10px;
 
   position: relative;
-
 }
 
 .place__link {
@@ -639,6 +635,12 @@ color: #fff;
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 3;
+}
+
+.place:hover .place__img-link  {
+  filter: brightness(70%);
+  transition: all 0.3s;
 }
 .place__img {
   position: relative;
@@ -652,11 +654,12 @@ color: #fff;
   padding: 1px 10px;
   background-color: #fff;
   border-radius: 25px;
-   font-size: 12px;
+  font-size: 12px;
 
   position: absolute;
   top: 15px;
   right: 15px;
+  z-index: 7;
 }
 .place__rating-numbers {
   display: inline-block;

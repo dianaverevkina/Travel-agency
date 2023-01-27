@@ -43,36 +43,35 @@
 }
 
 .offers__cards {
-  max-width: 1000px;
   margin: 0 auto;
   gap: 20px;
 }
 
 .tour {
-  flex: 0 1 calc((100% - 40px)/2);
+  padding: 20px;
+}
+}
+
+@media (max-width: 1100px) {
+
+  .offers__cards{
+    max-width: 850px;
+  }
+  .tour {
+  flex: 0 1 calc((100% - 20px)/2);
   padding: 20px;
 }
 
 .tour__top {
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .tour__start-date {
   writing-mode:  horizontal-tb;
-  margin: 0 0 10px;
 }
-
-.tour__img {
-/*  width: 100%;*/
-/*  flex-grow: 1;*/
+.place {
+ flex: 0 1 calc((100% - 40px)/3);
 }
-
-/*.tour__img-link {
-   width: 100%;
-  object-fit: contain;
-}*/
-
 }
 
 @media (max-width: 999px) {
@@ -158,6 +157,7 @@
 .search__block {
   gap: 20px;
   padding: 30px 25px 25px;
+  margin: 0;
 }
 
 .filter {
@@ -165,8 +165,76 @@
 }
 
 .filter__item {
-  flex: 1 1 calc(33%);
+  flex: 1 1 33%;
   gap: 6px;
+}
+
+.offers__title {
+  margin: 0 0 25px;
+}
+
+.offers__cards {
+  max-width: 500px;
+}
+
+.title {
+  font-size: calc(22px + (26 + 26 * 0.7) * ((100vw - 320px) / 1440));
+}
+
+.tour {
+  flex: 0 1 100%;
+}
+
+.tour__start-date {
+  font-size: 14px;
+}
+
+.tour__name-link {
+  font-size: 20px;
+}
+
+.tour__price-value {
+  font-size: 20px;
+}
+.price__count-person {
+  font-size: 14px;
+} 
+
+.tour__button {
+  font-size: 16px;
+}
+
+.destination__title {
+  margin: 0 0 30px;
+}
+
+.destination__topics {
+  margin: 0 0 35px;
+  justify-content: stretch;
+  gap: 15px;
+}
+
+.destination__cards {
+  margin: 0 0 50px;
+}
+
+.place {
+ flex: 0 1 calc((100% - 20px)/2);
+}
+
+.place__rating {
+  padding: 3px 10px;
+  font-size: 14px;
+
+  top: 15px;
+  right: 15px;
+}
+
+.place__rating-numbers::before{
+  
+  width: 17px;
+  height: 17px;
+  background: url('../img/png/Star.png') center/ 17px no-repeat;
 }
   
 }
@@ -237,5 +305,15 @@
 .filter-date__subtopic::after {
   width: 20px;
   height: 18px;
+}
+
+.destination__cards {
+  max-width: 350px;
+  margin: 0 auto 40px;
+}
+
+.place {
+   flex: 0 1 100%;
+   padding: 15px 10px;
 }
 }
