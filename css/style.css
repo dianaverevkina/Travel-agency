@@ -103,8 +103,12 @@ body {
   font-weight: 500;
 }
 
-.body.lock {
-  overflow: hidden;
+body.lock {
+  overflow-y: hidden;
+}
+
+html.lock {
+/*  overflow: hidden;*/
 }
 
 .wrapper {
@@ -197,7 +201,7 @@ body {
 }
 
 .icon.active {
-  background: url('../svg/cross.svg') center/80% no-repeat;
+/*  background: url('../svg/cross.svg') center/80% no-repeat;*/
 }
 
 .icon__top, .icon__bottom {

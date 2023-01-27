@@ -98,6 +98,7 @@
 
   .menu__items {
     position: absolute;
+    height: 200px;
     top: 40px;
     right: 0;
     padding: 30px;
@@ -110,6 +111,7 @@
     scale: 0;
     overflow: auto;
   }
+
 
   .menu__items.active {
     scale: 1;
