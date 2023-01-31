@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Travel agency</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/adapt.css">
 </head>
@@ -21,9 +22,6 @@
 							<li class="menu__item"><a href="#" class="menu__link">Tips</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Alerts</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">ASlfgerts</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Borts</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Higrts</a></li>
 						</ul>
 						<div class="menu__icon icon">
 						    <span class="icon__top"></span>
@@ -128,7 +126,6 @@
 							<div class="tour__top">
 								<div class="tour__img">
 									<img src="img/png/offer1.png" alt="Tour Loga Sea" class="tour__img-link">
-									<!-- <a href="#" class="tour__link"></a> -->
 								</div>
 								<span class="tour__start-date">14 FEB 2022</span>
 							</div>
@@ -148,7 +145,6 @@
 							<div class="tour__top">
 								<div class="tour__img">
 									<img src="img/png/offer2.png" alt="Tour Ansgar Scheffold" class="tour__img-link">
-									<!-- <a href="#" class="tour__link"></a> -->
 								</div>
 								<span class="tour__start-date">18 Jun 2022</span>
 							</div>
@@ -168,7 +164,6 @@
 							<div class="tour__top">
 								<div class="tour__img">
 									<img src="img/png/offer3.png" alt="Tour Lona X" class="tour__img-link">
-									<!-- <a href="#" class="tour__link"></a> -->
 								</div>
 								<span class="tour__start-date">22 Dec 2022</span>
 							</div>
@@ -188,23 +183,38 @@
 				</div>
 			</section>
 
-			<!-- <section class="contact">
+			<section class="about">
 				<div class="container">
-					<div class="contact__body">
-						<div class="contact__img">
-							<img src="" alt="" class="contact__img-link">
+					<div class="about__body">
+						<div class="about__img">
+							<img src="img/contact1.jpg" alt="" class="about__img-link">
+							<div class="about__advantages">
+								<div class="about__advantage about__tourist">
+									<span class="about__number">5000+</span>
+									<span class="about__word">Tourists</span>
+							    </div>
+								<div class="about__advantage about__destination">
+									<span class="about__number">300+</span>
+									<span class="about__word">Destinations</span>
+								</div>
+								<div class="about__advantage about__hotel">
+									<span class="about__number">150+</span>
+									<span class="about__word">Hotels</span>
+								</div>
+								
+							</div>
 						</div>
 						<div class="contact__content">
-							<h2 class="contact__title title">Travel Any Corner of The World With Us</h2>
-							<div class="contact__text text">
-								<p class="text__par">Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+							<h2 class="about__title title">Travel Any Corner of The World With Us</h2>
+							<div class="about__text text">
+								<p class="text__par">Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us. </p>
 							    <p class="text__par">Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
 						    </div>
-							<a class="contact__btn button">Contact us</a>
+							<a class="about__btn">Contact us</a>
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<section class="destination">
 				<div class="container">
@@ -219,8 +229,8 @@
 							<a href="#" class="place__link"></a>
 							<div class="place__img">
 								<img src="img/png/destination1.png" alt="" class="place__img-link">
-								<div class="place__rating">
-								    <span class="place__rating-numbers">3.4</span>
+								<div class="place__rating rating">
+								    <span class="place__rating-numbers rating-numbers">3.4</span>
 							    </div>
 							</div>
 							<div class="place__description">
@@ -232,8 +242,8 @@
 							<a href="#" class="place__link"></a>
 							<div class="place__img">
 								<img src="img/png/destination2.png" alt="" class="place__img-link">
-								<div class="place__rating">
-								    <span class="place__rating-numbers">4.5</span>
+								<div class="place__rating rating">
+								    <span class="place__rating-numbers rating-numbers">4.5</span>
 							    </div>
 							</div>
 							<div class="place__description">
@@ -245,8 +255,8 @@
 							<a href="#" class="place__link"></a>
 							<div class="place__img">
 								<img src="img/png/destination3.png" alt="" class="place__img-link">
-								<div class="place__rating">
-								    <span class="place__rating-numbers">4.2</span>
+								<div class="place__rating rating">
+								    <span class="place__rating-numbers rating-numbers">4.2</span>
 							    </div>
 							</div>
 							<div class="place__description">
@@ -258,8 +268,8 @@
 							<div class="place__img">
 								<a href="#" class="place__link"></a>
 								<img src="img/png/destination4.png" alt="" class="place__img-link">
-								<div class="place__rating">
-								    <span class="place__rating-numbers">3.5</span>
+								<div class="place__rating rating">
+								    <span class="place__rating-numbers rating-numbers">3.5</span>
 							    </div>
 							</div>
 							<div class="place__description">
@@ -271,9 +281,75 @@
 				</div>	
 			</section>
 
+			<div class="reviews">
+				<div class="container">
+
+					<div class="reviews__slider slider swiper">
+						<div class="slider__wrapper swiper-wrapper">
+
+							<div class="slider__review swiper-slide">
+								<div class="review__body">
+									<div class="review__text">
+										Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
+									</div>
+									<span class="review__author">- Vand D</span>
+									<span class="review__label">Happy Treloo</span>
+								</div>	
+								<div class="reviews__img">
+								    <img src="img/png/reviews1.png" alt="" class="reviews__img-link">
+								    <div class="reviews__rating rating">
+								        <span class="rating-numbers">4.5</span>
+							        </div>
+							    </div>
+							</div>
+
+							<div class="slider__review swiper-slide">
+								<div class="review__body">
+									<div class="review__text">
+										Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.
+									</div>
+									<span class="review__author">- Tru Vio</span>
+									<span class="review__label">Happy Treloo</span>
+								</div>	
+								<div class="reviews__img">
+								    <img src="img/png/reviews2.png" alt="" class="reviews__img-link">
+								    <div class="reviews__rating rating">
+								        <span class="rating-numbers">4.9</span>
+							        </div>
+							    </div>
+							</div>	
+						</div>
+						<div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>	
+				</div>
+			</div>
+
+			<div class="registration">
+				<div class="container">
+					<div class="registration__body">
+						<p class="registration__text title">Don’t Miss The 50% Discount if You register Today</p>
+						<a href="#" class="registration__button">Register Today</a>
+					</div>
+				</div>
+			</div>
+
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">	
+			        <a href="#" class="rights">© 2022 Treloo LLC - All right reserved.</a>
+				    <ul class="footer__menu">
+				        <li class="footer__item menu__item"><a href="#" class="footer__item-link">Review</a></li>
+					    <li class="footer__item menu__item"><a href="#" class="footer__item-link">Tips</a></li>
+					    <li class="footer__item menu__item"><a href="#" class="footer__item-link">Alerts</a></li>
+					    <li class="footer__item menu__item"><a href="#" class="footer__item-link">Blog</a></li>
+				    </ul>
+			    </div>
+		    </div>
+		</footer>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
