@@ -1,3 +1,4 @@
+//Открыть/закрыть меню-бургер
 let icon = document.querySelectorAll('.icon');
 let menu__items = document.querySelector('.menu__items');
 let back = document.querySelector('body');
@@ -24,12 +25,7 @@ let swiper = new Swiper('.slider', {
       pageUpDown: true,
    },
 
-   watchOverflow: true,
-
    loop: true,
-
-   loopedSlides: 4,
-
    speed: 700,
 
    breakpoints: {
